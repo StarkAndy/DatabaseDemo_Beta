@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/et_id"
+        android:hint="Enter id ..."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+   <EditText
+       android:id="@+id/et_file_name"
+       android:hint="Enter File Name ..."
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_total_size"
+        android:hint="Enter Total Size ..."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_remaining"
+        android:hint="Enter Remaining ..."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_truefalse"
+        android:hint="Enter true of false.."
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:text="Save"
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="GetAll"
+        android:id="@+id/btn_getdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+ <LinearLayout
+     android:orientation="horizontal"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+  <EditText
+      android:inputType="number"
+      android:hint="id.."
+      android:id="@+id/et_id_get"
+      android:layout_width="100dp"
+      android:layout_height="wrap_content" />
+
+
+  <EditText
+      android:hint="name"
+      android:id="@+id/name"
+      android:layout_width="100dp"
+      android:layout_height="wrap_content" />
+
+
+  <Button
+      android:text="get"
+      android:id="@+id/btn_getspecific"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+
+
+ </LinearLayout>
+
+
+ <Button
+     android:text="Delete All"
+     android:onClick="deleteAll"
+     android:id="@+id/deleteAll"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content" />
+
+
+</LinearLayout>
